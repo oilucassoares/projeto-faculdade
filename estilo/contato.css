@@ -1,4 +1,173 @@
 @charset "8-UTF";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('../conteudos/fontes/idroid.otf') 
+    format('opentype'); 
+    font-weight: normal;
+}
+/*@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@400;700&display=swap'); /*fonte importada do Google Fonts*/
+
+.main-contato{
+    background-color: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 0px;
+    text-align: justify;
+    margin-bottom: 30px;
+    padding: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.473);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    line-height: 2em;
+    
+}
+
+.left-contato{
+    margin-left: 2%;
+    width: 50vw; /*Ocupar apenas 50% da tela*/
+    height: 100vh; /*Ocupar altura inteira da tela*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*P um conteudo ficar abaixo do outro*/
+}
+
+.left-contato > h1{
+    font-size: 2.5vw;
+    color: #77ffc0;
+}
+
+.right-contato{
+    width: 50vw; /*Ocupar apenas 50% da tela*/
+    height: 89vh; /*Ocupar altura inteira da tela*/
+    margin: 5%;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+.card-formulario{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*P um conteudo ficar abaixo do outro*/
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056; 
+}
+
+.card-formulario > h1{
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+
+}
+
+.textfield > input{
+    width: 105%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color: #f0ffffde;
+    margin-bottom: 10px;
+
+}
+
+.textfield > input::placeholder{
+    color: #f0ffff94;
+}   
+
+.textfield-obs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+
+}
+
+.textfield-obs > input{
+    width: 105%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield-obs > label{
+    color: #f0ffffde;
+    margin-bottom: 10px;
+
+}
+
+.textfield-obs > input::placeholder{
+    color: #f0ffff94;
+}
+
+.btn-enviar{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b1234;
+    background-color: #00ff88;
+    box-shadow: 0px 10px 40px #00ff8052; 
+    /*botao LOGIN e sombra*/
+}
+
+.btn-enviar:hover{
+    cursor: pointer;
+    background-color: #09e07c;
+}
+form{
+    min-width: 210px;
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+    flex-direction: row-reverse;
+}
+
+/*Daqui pra CIMA é o estilo da parte de BAIXO da página*/
+
+/*Daqui pra baixo é o estilo da parte de CIMA da página*/
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
@@ -116,18 +285,7 @@ main img.pequena{
     display: block;
     margin: auto;
 }
-iframe.video{
-    display: block;
-    margin: auto;
-    width: 100%;
-}
-div.video{
-    background-color: var(--cor3);
-    margin: 0px -10px 30px -10px;
-    padding: 20px;
-    padding-bottom: 5%;
-    position: relative;
-}
+
 h3#novidades{
     color: white;
     background-color: var(--cor4);
@@ -197,3 +355,5 @@ a.link::after{ /*:: significa DEPOIS DO LINK*/
         width: 110%;
     }
 }
+
+
