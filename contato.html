@@ -7,10 +7,10 @@
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <title>Curriculo online - RU4348833</title>
     <link rel="stylesheet" href="estilo/contato.css">
-    
 
 </head>
 <body>
+
     <header>
         <h1 class="titulo" >>>> ENTRE EM CONTATO <<<</h1>
         <div class="center">
@@ -28,17 +28,40 @@
         </nav>
     </header>
     <main>
-        
-        <!--Separando meu código por tag uteis para deixar o código estruturado-->
-        <section>
-            <article id="sobre-mim"> <!--Sobre mim-->
-                <h2>xxxxx</h2>
-                <ul>
-                    <li>xxxxx</li>
-                </ul>
 
-            </article>         
-        </section>
+        <div class="main-contato">
+            <div class="left-contato">
+                <h1>Preencha o formulário &rArr;</h1>
+            </div>
+
+        <form action="">
+            <div class="right-contato">
+                <div class="card-formulario">
+                    <h1>FORMULÁRIO</h1>
+                    
+                    <!--Campo para inserir o nome-->
+                    <div class="textfield">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" placeholder="Seu nome" data-min-length="3" required>
+                        
+                        <!--Campo para inserir o email-->
+                        <div class="textfield">
+                            <label for="senha">Email</label>
+                            <input type="email" name="email" placeholder="Seu email" required>
+
+                            <div class="textfield-obs">
+                                    <label for="text">Digite seu texto</label>
+                                    <input type="text" name="text" placeholder="Escreva aqui" required>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <button type="submit" class="btn-enviar">Enviar</button> <!--Botão enviar-->
+                </div>
+            </div>
+        </div>
+    </form>
+
     </main>
                 
         <footer>
